@@ -2,11 +2,28 @@
   "name": "my-v0-project",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
+  "description": "",
+  "homepage": "https://github.com/crb3l/package-transport-site/#readme",
+  "bugs": {
+    "url": "https://github.com/crb3l/package-transport-site//issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crb3l/package-transport-site/.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },  "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "lint": "eslint .",
-    "start": "next start"
+    "lint": "next lint",
+    "start": "next start",
+    "export": "next export",
+    "deploy": "next build  && gh-pages -d out --nojekyll"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
