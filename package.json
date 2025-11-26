@@ -1,11 +1,11 @@
 {
-  "name": "my-v0-project",
+  "name": "package-transport-site",
   "version": "0.1.0",
   "private": true,
   "description": "",
   "homepage": "https://github.com/crb3l/package-transport-site/#readme",
   "bugs": {
-    "url": "https://github.com/crb3l/package-transport-site//issues"
+    "url": "https://github.com/crb3l/package-transport-site/issues"
   },
   "repository": {
     "type": "git",
@@ -13,11 +13,12 @@
   },
   "license": "ISC",
   "author": "",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "directories": {
     "lib": "lib"
-  },  "scripts": {
+  },
+  "scripts": {
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
