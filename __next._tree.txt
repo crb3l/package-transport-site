@@ -1,0 +1,11 @@
+:HL["/_next/static/chunks/8d403dbfd9f9988d.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/white-delivery-van-simple-clean-background.jpg","image"]
+:HL["/vienna-austria-cityscape-architecture.jpg","image"]
+:HL["/berlin-germany-brandenburg-gate.jpg","image"]
+:HL["/brussels-belgium-grand-place.jpg","image"]
+:HL["/delivery-courier-handing-package-to-customer-smili.jpg","image"]
+:HL["/amsterdam-netherlands-canals-houses.jpg","image"]
+:HL["/london-england-big-ben-tower.jpg","image"]
+:HL["/bucharest-romania-palace-parliament.jpg","image"]
+0:{"buildId":"NyZQcC_Mm5dFHxhn-n77t","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
