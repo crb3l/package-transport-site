@@ -4,10 +4,7 @@ const nextConfig = {
   // basePath: "/portfolio-next-js", ## only used if no custom domain is used...
   // assetPrefix: "/portoflio-next-js",
   trailingSlash: true,
- 
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+
   typescript: {
     ignoreBuildErrors: true,
   },
