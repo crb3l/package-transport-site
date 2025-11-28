@@ -7,6 +7,7 @@ import { Pricing } from "@/components/pricing"
 import { Testimonials } from "@/components/testimonials"
 import { WhyUs } from "@/components/why-us"
 import { Contact } from "@/components/contact"
+import { ShippingCalculator } from "@/components/calculator/shipping-calculator"
 import { Footer } from "@/components/footer"
 import { FloatingContact } from "@/components/floating-contact"
 
@@ -19,6 +20,7 @@ export default function Home() {
       <Destinations />
       <Schedule />
       <Pricing />
+      <ShippingCalculator />
       <Testimonials />
       <WhyUs />
       <Contact />

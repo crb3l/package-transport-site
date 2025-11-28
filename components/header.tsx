@@ -13,7 +13,8 @@ export function Header() {
     { label: "Destinații", href: "#destinatii" },
     { label: "Program", href: "#program" },
     { label: "Tarife", href: "#tarife" },
-    { label: "Testimoniale", href: "#testimoniale" },
+    // { label: "Testimoniale", href: "#testimoniale" },
+    { label: "Calculator", href: "#calculator" },
     { label: "Contact", href: "#contact" },
   ]
 
