@@ -1,4 +1,4 @@
-:HL["/_next/static/chunks/8d403dbfd9f9988d.css","style"]
+:HL["/_next/static/chunks/219f0f84d0c7fcd2.css","style"]
 :HL["/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/white-delivery-van-simple-clean-background.jpg","image"]
 :HL["/vienna-austria-cityscape-architecture.jpg","image"]
@@ -8,4 +8,4 @@
 :HL["/amsterdam-netherlands-canals-houses.jpg","image"]
 :HL["/london-england-big-ben-tower.jpg","image"]
 :HL["/bucharest-romania-palace-parliament.jpg","image"]
-0:{"buildId":"mke80gXDotJulPlLX8dS3","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"0Tk_yInsm8cUHG9rtRYBy","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
