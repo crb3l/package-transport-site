@@ -433,7 +433,7 @@ export function ShippingCalculator() {
           <div className="mt-8 text-center text-sm text-muted-foreground">
             <p>
               Pentru informații suplimentare, contactați-ne la{" "}
-              <span className="font-semibold text-primary">+40 748 419 428</span>
+              <span className="font-semibold text-primary">+40 700 400 000</span>
             </p>
           </div>
         </div>
