@@ -27,6 +27,8 @@ const countries = [
 export function ShippingCalculator() {
   const { toast } = useToast()
   const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
     fromCountry: "",
     fromAddress: "",
     toCountry: "",
@@ -50,6 +52,8 @@ export function ShippingCalculator() {
   const handleCalculate = async () => {
     // Validate form
     if (
+      !formData.name ||
+      !formData.phone ||
       !formData.fromCountry ||
       !formData.fromAddress ||
       !formData.toCountry ||
@@ -100,6 +104,8 @@ export function ShippingCalculator() {
 
   const handleReset = () => {
     setFormData({
+      name: "",
+      phone: "",
       fromCountry: "",
       fromAddress: "",
       toCountry: "",
@@ -116,10 +122,10 @@ export function ShippingCalculator() {
   }
 
   const handleSendOrder = async () => {
-    if (!formData.email) {
+    if (!formData.email || !formData.phone) {
       toast({
-        title: "Email necesar",
-        description: "Vă rugăm să introduceți adresa de email pentru confirmare.",
+        title: "Email sau număr telefon necesar",
+        description: "Vă rugăm să introduceți adresa de email sau numărul de telefon pentru confirmare.",
         variant: "destructive",
       })
       return
@@ -169,9 +175,41 @@ export function ShippingCalculator() {
               <CardDescription>Completați formularul pentru a calcula tariful de transport</CardDescription>
             </CardHeader>
             <CardContent className="space-y-6 pt-6">
-              {/* Location Section */}
-              <div className="grid gap-6 md:grid-cols-2">
+              {/* contact info section */}
+              <div className="space-y-4">
+                <div className="grid gap-6 md:grid-cols-2">
+                  <div className="space-y-2">
+                    <Label htmlFor="from-country" className="flex items-center gap-2 text-base font-semibold">
+                      <MapPin className="h-4 w-4 text-primary" />
+                      Nume
+                    </Label>
+                    <Input
+                      id="from-name"
+                      type="text"
+                      placeholder="Nume, Prenume"
+                      className="h-11"
+                      value={formData.name}
+                      onChange={(e) => handleInputChange("name", e.target.value)}
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="from-country" className="flex items-center gap-2 text-base font-semibold">
+                      <MapPin className="h-4 w-4 text-primary" />
+                      Telefon
+                    </Label>
+                    <Input
+                      id="from-name"
+                      type="text"
+                      placeholder="Exemplu: +40711188999"
+                      className="h-11"
+                      value={formData.phone}
+                      onChange={(e) => handleInputChange("phone", e.target.value)}
+                    />
+                  </div>
+                </div>
+                {/* Location Section */}
                 <div className="space-y-4">
+
                   <div className="space-y-2">
                     <Label htmlFor="from-country" className="flex items-center gap-2 text-base font-semibold">
                       <MapPin className="h-4 w-4 text-primary" />
@@ -360,7 +398,7 @@ export function ShippingCalculator() {
                 <div className="rounded-lg border-2 border-primary bg-primary/10 p-6">
                   <div className="text-center">
                     <p className="text-sm font-medium text-muted-foreground">Tarif estimat</p>
-                    <p className="mt-2 text-4xl font-bold text-primary">€{calculatedRate}</p>
+                    <p className="mt-2 text-4xl font-bold text-primary">{calculatedRate} RON</p>
                     <p className="mt-2 text-xs text-muted-foreground">
                       *Acesta este un tarif estimat. Veți primi oferta finală de la echipa noastră.
                     </p>
@@ -394,7 +432,7 @@ export function ShippingCalculator() {
                 <div className="space-y-4 rounded-lg border-2 border-primary/30 bg-gradient-to-br from-primary/5 to-primary/10 p-6">
                   <h3 className="text-lg font-semibold">Trimite comanda către echipa noastră</h3>
                   <p className="text-sm text-muted-foreground">
-                    Introduceți email-ul pentru a primi confirmarea și oferta detaliată
+                    Introduceți email-ul sau numărul de telefon pentru a primi confirmarea și oferta detaliată
                   </p>
                   <div className="space-y-2">
                     <Label htmlFor="email" className="text-base font-semibold">
@@ -407,6 +445,22 @@ export function ShippingCalculator() {
                       className="h-11"
                       value={formData.email}
                       onChange={(e) => handleInputChange("email", e.target.value)}
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <h3 className="font-bold">SAU</h3>
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="phone" className="text-base font-semibold">
+                      Număr de telefon
+                    </Label>
+                    <Input
+                      id="phone"
+                      type="phone"
+                      placeholder="+40711122111"
+                      className="h-11"
+                      value={formData.phone}
+                      onChange={(e) => handleInputChange("phone", e.target.value)}
                     />
                   </div>
                   <Button
