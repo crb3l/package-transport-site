@@ -8,4 +8,4 @@
 :HL["/amsterdam-netherlands-canals-houses.jpg","image"]
 :HL["/london-england-big-ben-tower.jpg","image"]
 :HL["/bucharest-romania-palace-parliament.jpg","image"]
-0:{"buildId":"qDhxx_coEO_5NKm2xOA3X","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"a4dYGr9CXSVD6NkTJ193z","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
