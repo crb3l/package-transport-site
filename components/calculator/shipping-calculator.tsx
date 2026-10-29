@@ -245,7 +245,36 @@ export function ShippingCalculator() {
                     />
                   </div>
                 </div>
-
+                <div className="grid gap-6 md:grid-cols-2">
+                  <div className="space-y-2">
+                    <Label htmlFor="from-country" className="flex items-center gap-2 text-base font-semibold">
+                      <MapPin className="h-4 w-4 text-primary" />
+                      Nume destinatar
+                    </Label>
+                    <Input
+                      id="from-name"
+                      type="text"
+                      placeholder="Nume, Prenume"
+                      className="h-11"
+                      value={formData.name}
+                      onChange={(e) => handleInputChange("name", e.target.value)}
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="from-country" className="flex items-center gap-2 text-base font-semibold">
+                      <MapPin className="h-4 w-4 text-primary" />
+                      Telefon destinatar
+                    </Label>
+                    <Input
+                      id="from-name"
+                      type="text"
+                      placeholder="Exemplu: +40711188999"
+                      className="h-11"
+                      value={formData.phone}
+                      onChange={(e) => handleInputChange("phone", e.target.value)}
+                    />
+                  </div>
+                </div>
                 <div className="space-y-4">
                   <div className="space-y-2">
                     <Label htmlFor="to-country" className="flex items-center gap-2 text-base font-semibold">
