@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: "/package-transport-site/", //## only used if no custom domain is used...
-  assetPrefix: "/package-transport-site/",
+  basePath: "/package-transport-site", //## only used if no custom domain is used...
+  assetPrefix: "/package-transport-site",
   trailingSlash: true,
 
   typescript: {
