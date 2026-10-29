@@ -29,7 +29,7 @@ export function WhyUs() {
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="relative">
-            <img src="/delivery-courier-handing-package-to-customer-smili.jpg" alt="Livrare colete" className="rounded-2xl shadow-xl" />
+            <img src={`${process.env.IMAGES_PUBLIC_PATH}/delivery-courier-handing-package-to-customer-smili.jpg`} alt="Livrare colete" className="rounded-2xl shadow-xl" />
             <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-6 rounded-xl shadow-xl">
               <div className="flex items-center gap-3">
                 <Award className="h-10 w-10 text-secondary" />

@@ -11,6 +11,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  env:{IMAGES_PUBLIC_PATH:'/package-transport-site'}
 }
 
 export default nextConfig

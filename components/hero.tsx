@@ -69,7 +69,7 @@ export function Hero() {
 
           <div className="relative hidden lg:block">
             <div className="relative">
-              <img src="/white-delivery-van-simple-clean-background.jpg" alt="Dubiță albă de transport" className="rounded-2xl shadow-2xl" />
+              <img src={`${process.env.IMAGES_PUBLIC_PATH}/white-delivery-van-simple-clean-background.jpg`} alt="Dubiță albă de transport" className="rounded-2xl shadow-2xl" />
               <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl">
                 <p className="text-4xl font-bold text-foreground">10+</p>
                 <p className="text-muted-foreground">Ani de experiență</p>

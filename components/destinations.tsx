@@ -4,37 +4,37 @@ const destinations = [
   {
     country: "Austria",
     cities: "Viena, Graz, Linz, Salzburg",
-    image: "/vienna-austria-cityscape-architecture.jpg",
+    image: `${process.env.IMAGES_PUBLIC_PATH}/vienna-austria-cityscape-architecture.jpg`,
     flag: "🇦🇹",
   },
   {
     country: "Germania",
     cities: "Berlin, München, Frankfurt, Stuttgart",
-    image: "/berlin-germany-brandenburg-gate.jpg",
+    image: `${process.env.IMAGES_PUBLIC_PATH}/berlin-germany-brandenburg-gate.jpg`,
     flag: "🇩🇪",
   },
   {
     country: "Belgia",
     cities: "Bruxelles, Antwerp, Gent, Bruges",
-    image: "/brussels-belgium-grand-place.jpg",
+    image: `${process.env.IMAGES_PUBLIC_PATH}/brussels-belgium-grand-place.jpg`,
     flag: "🇧🇪",
   },
   {
     country: "Olanda",
     cities: "Amsterdam, Rotterdam, Haga, Utrecht",
-    image: "/amsterdam-netherlands-canals-houses.jpg",
+    image: `${process.env.IMAGES_PUBLIC_PATH}/amsterdam-netherlands-canals-houses.jpg`,
     flag: "🇳🇱",
   },
   {
     country: "Anglia",
     cities: "Londra, Manchester, Birmingham, Leeds",
-    image: "/london-england-big-ben-tower.jpg",
+    image: `${process.env.IMAGES_PUBLIC_PATH}/london-england-big-ben-tower.jpg`,
     flag: "🇬🇧",
   },
   {
     country: "România",
     cities: "București, Cluj, Timișoara, Iași",
-    image: "/bucharest-romania-palace-parliament.jpg",
+    image: `${process.env.IMAGES_PUBLIC_PATH}/bucharest-romania-palace-parliament.jpg`,
     flag: "🇷🇴",
   },
 ]
